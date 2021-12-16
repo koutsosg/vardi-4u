@@ -3,10 +3,10 @@ import * as React from "react"
 import OmgSidebar from "./OmgSidebar/sidebar"
 import OmgFooter from "./OmgPrefooter/prefooter-info"
 import { Button, Header, Icon, Modal, List } from "semantic-ui-react"
-import logo from "../images/logo.jpg"
+import logo from "../images/logo.png"
 import overlay from "../images/overlay.png"
 import imgback from "../images/backimg.jpg"
-import { useStaticQuery, graphql } from "gatsby"
+import Articles from "../components/PdfReader/articles/articles"
 function ModalExampleCloseIcon() {
   const [open, setOpen] = React.useState(false)
 
@@ -138,7 +138,7 @@ const links = [
       ],
     }, */
   { to: "/#services", text: "Υπηρεσίες" },
-  { to: "/didyouknow", text: "Ήξερες Οτι..." },
+  { to: "/#didyouknow", text: "Ήξερες Οτι..." },
   {
     to: "/about",
     text: "Χρήσιμες Ερωτήσεις",
@@ -215,9 +215,8 @@ const Layout = ({ children }) => {
         links={links}
         slinks={slinks}
       >
-        <h1>All PDF Downloads</h1>
-        <ul></ul>
         {children}
+        <Articles />
         <OmgFooter classes={classes} slinks={slinks} />
       </OmgSidebar>
     </>

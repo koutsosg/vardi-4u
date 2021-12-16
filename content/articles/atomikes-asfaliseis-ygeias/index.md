@@ -1,12 +1,12 @@
 ---
-title: "Hello World"
+title: "Αρχές Λειτουργίας Ασφαλίσεων"
 attachments:
-  - "./atomikes-asfaliseis-ygeias2.pdf"
-author: "Hello World"
+  - "./atomikes-asfaliseis-ygeias.pdf"
+author: "ΕΑΕΕ"
 date: "2016-05-01T22:12:03.284Z"
-description: "Hello World"
+description: "Με ένα καλαίσθητο ενημερωτικό τετρασέλιδο η Ένωση Ασφαλιστικών Εταιριών Ελλάδος (ΕΑΕΕ) απευθύνεται στο ευρύτερο καταναλωτικό κοινό με στόχο την ενημέρωσή του για τις βασικές αρχές των ατομικών προγραμμάτων υγείας. "
 
-source: "Hello World"
-sourcelink: "Hello World"
-label: "Hello World"
+source: "ΕΑΕΕ"
+sourcelink: "http://www.eaee.gr/"
+label: ""
 ---

@@ -22,6 +22,7 @@ export default class RetirmentFaqs extends Component {
         <Seo
           title=" Χρήσιμες Ερωτήσεις Σύνταξη"
           description="Η Εθνική Ασφαλιστική, κατανοώντας απόλυτα τις οικονομικές συνθήκες και τις απαιτήσεις του σήμερα αλλά και τις ανησυχίες για το αύριο, σχεδιάζει και προσφέρει λύσεις σε κάθε άνθρωπο που ενδιαφέρεται πραγματικά για την κάλυψη των συνταξιοδοτικών του αναγκών."
+          siteUrl="https://fvardi.ohmy-gad.com/xrisimes-erwtisis/faq-suntaksh/"
         />
         <div className="px-5 text-left gray">
           <h1 className="gray pb-5 ">Χρήσιμες Ερωτήσεις Σύνταξη</h1>

@@ -56,7 +56,7 @@ const articles = [
     source: "euro2day.gr",
     arialabel: "Σύνδεσμος για euro2day.gr",
   },
-  /* {
+  {
     alias: "afksanomeno-endiaferon-gia-unit-link",
     header: "Όλο και αυξανόμενο το ενδιαφέρον για Unit Linked",
     meta: "Βάιος Κρόκος",
@@ -123,7 +123,7 @@ const articles = [
           </title>
           <meta
             name="description"
-            content="Αρχές Λειτουργίας Καθορισμός Πρώτου Ασφαλίστρου"
+            content="Αρχές Λειτουργίας Καθορισμός Πρώτου Ασφαλίστρου "
           />
           <meta
             name="keywords"
@@ -187,7 +187,7 @@ const articles = [
     link: "https://www.nextdeal.gr/epikairotita/asfalistika-nea/idiotiki-asfalisi/78705/hristoforos-sardelis-ta-mathimatika-deihnoyn-ta",
     source: "nextdeal.gr",
     arialabel: "Σύνδεσμος για nextdeal.gr",
-  }, */
+  },
   /* {
     header: "Titlos",
     meta: "author",

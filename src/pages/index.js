@@ -4,13 +4,14 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Video from "../components/Video/video"
 import Services from "../components/Services/servicesinfo"
+/* import Articles from "../components/PdfReader/articles/articles" */
 /* import PdfReaderFinl from "../components/PdfReader/Modal/Articlesinfo" */
 const IndexPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-
+  const siteUrl = `${data.site.siteMetadata?.siteUrl}${data.sitePage.path}`
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title=" Ασφαλιστική Σύμβουλος" />
+      <Seo title="Φωτεινή Βαρδή" siteUrl={siteUrl} />
       <div className="pb-5 text-left">
         <h1 id="intro" className="px-5 text-center py-5 gray">
           Σε καιρούς μεγάλων αλλαγών
@@ -51,6 +52,7 @@ const IndexPage = ({ data, location }) => {
       </div>
       <Video />
       <Services />
+      {/*   <Articles /> */}
       {/* 
       <PdfReaderFinl /> */}
     </Layout>
@@ -61,9 +63,14 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
+    sitePage {
+      path
+    }
+
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
   }

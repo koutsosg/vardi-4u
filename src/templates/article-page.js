@@ -1,48 +1,39 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import PdfReader from "../components/PdfReader/PdfReader"
-const BlogPostTemplate = ({ data, location }) => {
+const ArticlePageTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
-  console.log(post.frontmatter.title)
-  console.log(post.frontmatter.author)
-  console.log(post.frontmatter.date)
-  console.log(post.frontmatter.description)
-  console.log(post.frontmatter.source)
-  console.log(post.frontmatter.sourcelink)
-  console.log(post.frontmatter.label)
-  console.log(post.frontmatter.attachments.publicURL)
+  const siteUrl = `${data.site.siteMetadata?.siteUrl}${post.fields.slug}`
   return (
     <Layout location={location} title={siteTitle}>
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        siteUrl={siteUrl}
       />
-      <PdfReader file="/static/1a1adfb2e6c41a391c2a44c42a1a92cc/atomikes-asfaliseis-ygeias.pdf" />
+      <header>
+        <h1 itemProp="headline">{post.frontmatter.title}</h1>
+        {post.frontmatter.author}
+      </header>
+
+      <PdfReader file={post.frontmatter.attachments[0].publicURL} />
       <article
         className="blog-post"
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>
-            {post.frontmatter.date}
-            <Link to={`${post.frontmatter.attachments.publicURL}`}>
-              Download the imported file
-            </Link>
-          </p>
-        </header>
-
         <hr />
         <footer>
-          {post.frontmatter.description}
-          {post.frontmatter.author}
+          <a
+            href={post.frontmatter.sourcelink}
+            aria-label={`Σύνδεσμος για ${post.frontmatter.source}`}
+          >
+            {post.frontmatter.source}
+          </a>
         </footer>
       </article>
       <nav className="blog-post-nav">
@@ -75,29 +66,36 @@ const BlogPostTemplate = ({ data, location }) => {
   )
 }
 
-export default BlogPostTemplate
+export default ArticlePageTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
+  query ArticlePageBySlug(
     $id: String!
     $previousPostId: String
     $nextPostId: String
   ) {
+    sitePage {
+      path
+    }
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
-
+      fields {
+        slug
+      }
       frontmatter {
         title
         author
         date(formatString: "MMMM DD, YYYY")
         description
         source
+        sourcelink
         attachments {
           publicURL
         }

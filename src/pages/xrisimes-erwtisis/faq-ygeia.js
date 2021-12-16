@@ -21,6 +21,7 @@ export default class HealthFaqs extends Component {
         <Seo
           title="Χρήσιμες Ερωτήσεις Υγεία"
           description="Oσο νωρίτερα επιλέξουμε να ασφαλίσουμε την υγεία μας, τόσο καλύτερα καθώς με την πάροδο των χρόνων τα προβλήματα υγείας χτυπούν συχνότερα την πόρτα μας. Σε περίπτωση που θελήσουμε να ασφαλιστούμε σε μεγάλη ηλικία, ίσως αυτό να μην μπορεί να γίνει ή να γίνει με όρους που δεν μας ικανοποιούν απόλυτα."
+          siteUrl={"https://fvardi.ohmy-gad.com/xrisimes-erwtisis/faq-ygeia"}
         />
         <div className="px-5 text-left gray">
           <h1 className="pb-5 gray">Χρήσιμες Ερωτήσεις Υγεία</h1>

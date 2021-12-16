@@ -6,7 +6,8 @@ module.exports = {
       summary: `Διακεκριμένη Ασφαλιστική Σύμβουλος`,
     },
     description: `Διακεκριμένη Ασφαλιστική Σύμβουλος στην Εθνική Ασφαλιστική. Δραστηριοποιούμαι στην εταιρία από το 2002 και διαθέτω εξειδικευμένη εμπειρία στην αποτελεσματική διαχείριση κινδύνων`,
-    siteUrl: `https://fvardi-4u.gr/`,
+    siteUrl: `https://fvardi.ohmy-gad.com/`,
+    image: "/logo.png",
     social: {
       twitter: ``,
     },
@@ -75,7 +76,7 @@ module.exports = {
     //     trackingId: `ADD YOUR TRACKING ID HERE`,
     //   },
     // },
-    {
+    /*  {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
@@ -130,7 +131,7 @@ module.exports = {
           },
         ],
       },
-    },
+    }, */
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -148,6 +149,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
