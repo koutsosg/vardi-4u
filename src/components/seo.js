@@ -9,8 +9,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-
-const Seo = ({ description, lang, meta, title, siteUrl }) => {
+import { useLocation } from "@reach/router"
+const Seo = ({ description, lang, meta, title, siteUrl, helmet }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -86,7 +86,7 @@ const Seo = ({ description, lang, meta, title, siteUrl }) => {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    ></Helmet>
   )
 }
 

@@ -9,4 +9,5 @@ description: "Ισχυρό παραμένει το momentum για τα προϊ
 source: "Insuranceworld"
 sourcelink: "https://insuranceworld.gr/102223/eidiseis/asfalistikes-eidiseis/olo-kai-ayxanomeno-to-endiaferon-gia-unit-linked/?utm_source=email&utm_medium=social-media&utm_campaign=addtoany"
 label: "Σύνδεσμος για Insuranceworld"
+sharelink: "endiaferon-gia-unit-link"
 ---

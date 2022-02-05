@@ -9,4 +9,5 @@ description: "Ιδιαίτερα ενδιαφέρον στοιχείο για τ
 source: "euro2day.gr"
 sourcelink: "https://www.euro2day.gr/news/enterprises/article/2099993/asfalistikes-etaireies-rali-paragoghs-sta-ependyti.html"
 label: "Hello World"
+sharelink: "rally-sta-ependitika-proioda"
 ---

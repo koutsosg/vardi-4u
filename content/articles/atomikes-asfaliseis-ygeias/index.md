@@ -9,4 +9,5 @@ description: "Με ένα καλαίσθητο ενημερωτικό τετρα
 source: "ΕΑΕΕ"
 sourcelink: "http://www.eaee.gr/"
 label: ""
+sharelink: "atomikes-asfaliseis-ygeias"
 ---

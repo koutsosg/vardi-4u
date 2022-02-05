@@ -9,4 +9,5 @@ description: "Χριστόφορος Σαρδελής: Τα μαθηματικά
 source: "Nextdeal.gr"
 sourcelink: "https://www.nextdeal.gr/epikairotita/asfalistika-nea/idiotiki-asfalisi/78705/hristoforos-sardelis-ta-mathimatika-deihnoyn-ta"
 label: "Hello World"
+sharelink: "sintaxiodotiko-zitima"
 ---

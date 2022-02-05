@@ -36,12 +36,8 @@ const ControlPanel = props => {
     if (!isMaxZoom) setScale(scale + 0.2)
   }
 
-  const onPageChange = e => {
-    const { value } = e.target
-    setPageNumber(Number(value))
-  }
   return (
-    <div className="control-panel m-5 p-3 mx-auto d-flex align-items-baseline justify-content-center">
+    <div className="control-panel m-5 p-3 mx-auto d-flex align-items-baseline justify-content-center flex-wrap">
       <div className="d-flex justify-content-between align-items-baseline">
         <Icon
           className={`mx-3 ${firstPageClass}`}
@@ -55,17 +51,7 @@ const ControlPanel = props => {
         />
 
         <span>
-          Page
-          <input
-            name="pageNumber"
-            type="number"
-            min={1}
-            max={numPages | 1}
-            className="p-0 pl-1 mx-2"
-            value={pageNumber}
-            onChange={onPageChange}
-          />
-          of {numPages}
+          Σελίδα {pageNumber} απο {numPages}
         </span>
 
         <Icon

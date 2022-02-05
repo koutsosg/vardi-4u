@@ -1,15 +1,15 @@
 import * as React from "react"
 import { StaticQuery, Link, graphql } from "gatsby"
-import { Card } from "semantic-ui-react"
+import { Card, CardGroup } from "semantic-ui-react"
 
 const classes = {
   maindiv: "p-5",
-  container: "",
+  container: "container",
   title: "gray",
   subtitle: "",
   span: "omg-lines",
   row: "row",
-  col: " p-2 mx-auto",
+  col: " p-2 mx-auto col-sm-12 col-md-6 col-lg-6 col-xl-4",
   coldiv: "p-2",
   image: "",
   header: "",
@@ -29,6 +29,7 @@ const Articles = ({ data }) => {
                 <div className="">
                   <Link to={article.fields.slug} itemProp="url">
                     <Card
+                      fluid
                       className="text-left"
                       link
                       header={article.frontmatter.title}
@@ -44,7 +45,7 @@ const Articles = ({ data }) => {
                   </Link>
                 </div>
               </div>
-            ))}
+            ))}{" "}
           </div>
         </div>
       </div>

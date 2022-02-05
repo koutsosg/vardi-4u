@@ -8,10 +8,10 @@ import Services from "../components/Services/servicesinfo"
 /* import PdfReaderFinl from "../components/PdfReader/Modal/Articlesinfo" */
 const IndexPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const siteUrl = `${data.site.siteMetadata?.siteUrl}${data.sitePage.path}`
+  const siteUrl = `${data.site.siteMetadata?.siteUrl}`
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="Φωτεινή Βαρδή" siteUrl={siteUrl} />
+    <Layout locacion={location} title={siteTitle}>
+      <Seo title="Ασφαλιστική Σύμβουλος" siteUrl={siteUrl} />
       <div className="pb-5 text-left">
         <h1 id="intro" className="px-5 text-center py-5 gray">
           Σε καιρούς μεγάλων αλλαγών

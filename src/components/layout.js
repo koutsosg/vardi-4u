@@ -7,6 +7,8 @@ import logo from "../images/logo.png"
 import overlay from "../images/overlay.png"
 import imgback from "../images/backimg.jpg"
 import Articles from "../components/PdfReader/articles/articles"
+import BackToTop from "../components/Backtotop"
+import MessengerCustomerChat from "react-messenger-customer-chat"
 function ModalExampleCloseIcon() {
   const [open, setOpen] = React.useState(false)
 
@@ -127,7 +129,7 @@ const website = {
 }
 
 const links = [
-  { to: "/#intro", text: "Αρχική" },
+  { to: "/", text: "Αρχική" },
 
   /* {
       to: "/about",
@@ -219,6 +221,12 @@ const Layout = ({ children }) => {
         <Articles />
         <OmgFooter classes={classes} slinks={slinks} />
       </OmgSidebar>
+      <MessengerCustomerChat pageId="306526283400988" />
+      {/* <MessengerCustomerChat
+              title="Facebook Messenger Customer Chat"
+              pageId="306526283400988"
+            /> */}
+      <BackToTop />
     </>
   )
 }
