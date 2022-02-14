@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import PdfReader from "../components/PdfReader/PdfReader"
-
 import "semantic-ui-css/semantic.min.css"
 import { Icon } from "semantic-ui-react"
 const ArticlePageTemplate = ({ data, location }) => {
