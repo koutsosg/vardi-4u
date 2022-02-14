@@ -14,6 +14,7 @@ function ModalExampleCloseIcon() {
 
   return (
     <Modal
+    id="modal"
       closeIcon
       open={open}
       trigger={<Button>Περισσότερα...</Button>}

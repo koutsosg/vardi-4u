@@ -2,6 +2,7 @@
 title: "Η επαφή με τη φύση από μικρή ηλικία είναι συστατικό ψυχικής ισορροπίας"
 attachments:
   - "./epafi-me-tin-fysi-apo-mikri-ilikia.pdf"
+  - "./fvardi-thumb.png"
 author: "therapies.gr"
 date: "2022-01-05T17:12:03.284Z"
 description: "Νέα έρευνα: Η επαφή με τη φύση από μικρή ηλικία είναι συστατικό ψυχικής ισορροπίας"

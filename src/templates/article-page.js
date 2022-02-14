@@ -33,6 +33,10 @@ const ArticlePageTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
         siteUrl={siteUrl}
+        featuredImage={
+          `https://fvardi-4u.gr${post.frontmatter.attachments[1].publicURL}` ||
+          ``
+        }
       />
 
       <header>

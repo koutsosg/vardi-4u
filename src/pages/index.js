@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Video from "../components/Video/video"
 import Services from "../components/Services/servicesinfo"
+
 /* import Articles from "../components/PdfReader/articles/articles" */
 /* import PdfReaderFinl from "../components/PdfReader/Modal/Articlesinfo" */
 const IndexPage = ({ data, location }) => {
@@ -55,6 +56,8 @@ const IndexPage = ({ data, location }) => {
       {/*   <Articles /> */}
       {/* 
       <PdfReaderFinl /> */}
+      {/*       <EmblaCarousel /> */}
+      {/*     <LiteGallery /> */}
     </Layout>
   )
 }
