@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Video from "../components/Video/video"
 import Services from "../components/Services/servicesinfo"
-
+import Carousel from "../components/Carousel"
 /* import Articles from "../components/PdfReader/articles/articles" */
 /* import PdfReaderFinl from "../components/PdfReader/Modal/Articlesinfo" */
 const IndexPage = ({ data, location }) => {
@@ -13,6 +13,7 @@ const IndexPage = ({ data, location }) => {
   return (
     <Layout locacion={location} title={siteTitle}>
       <Seo title="Ασφαλιστική Σύμβουλος" siteUrl={siteUrl} />
+      <Carousel></Carousel>
       <div className="pb-5 text-left">
         <h1 id="intro" className="px-5 text-center py-5 gray">
           Σε καιρούς μεγάλων αλλαγών
