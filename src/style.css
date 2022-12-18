@@ -328,6 +328,10 @@ a:hover .name{
   text-decoration: none;
   color: white;
 }
+a .nameicon {
+
+  color: red;
+}
 a:hover .nameicon{
   color: chartreuse;
 }
