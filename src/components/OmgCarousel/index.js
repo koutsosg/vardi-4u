@@ -1,7 +1,7 @@
-import React from "react";
-import "./style.css";
+import React from "react"
+import "./style.css"
 
-import Carousel from "react-bootstrap/Carousel";
+import Carousel from "react-bootstrap/Carousel"
 /**
  * A simple bootstrap slider
  *
@@ -18,7 +18,7 @@ const OmgCarousel = ({ slides, settings = {} }) => {
         indicators={settings.indicators}
         slide={settings.slide}
       >
-        {slides.map((slide) => (
+        {slides.map(slide => (
           <Carousel.Item
             className={`${slide.class.item} `}
             interval={settings.speed}
@@ -57,7 +57,7 @@ const OmgCarousel = ({ slides, settings = {} }) => {
         ))}
       </Carousel>
     </>
-  );
-};
+  )
+}
 
-export default OmgCarousel;
+export default OmgCarousel

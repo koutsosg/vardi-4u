@@ -108,14 +108,18 @@ function ModalExampleCloseIcon() {
 const website = {
   name: "Φωτεινή Βαρδή",
   url: "/",
-  h1: /* "Φωτεινή Βαρδή" */<a className="name"
-  href="tel:+306936997712"
-  title="Καλέστε με τώρα"
->
-
-  <span className="name">Φωτεινή Βαρδή</span>
-  <span   className="nameicon ui px-1"><Icon link name='phone square' /></span>
-</a>,
+  h1: (
+    /* "Φωτεινή Βαρδή" */ <a
+      className="name"
+      href="tel:+306936997712"
+      title="Καλέστε με τώρα"
+    >
+      <span className="nameicon ">
+        <Icon link name="phone square" size="large" />
+      </span>
+      <span className="name">Φωτεινή Βαρδή</span>
+    </a>
+  ),
   h2: "Διακεκριμένη Ασφαλιστική Σύμβουλος",
   p: "στην Εθνική Ασφαλιστική. Δραστηριοποιούμαι στην εταιρία από το 2002 και διαθέτω εξειδικευμένη εμπειρία στην αποτελεσματική διαχείριση κινδύνων...",
   quicklink: "",
