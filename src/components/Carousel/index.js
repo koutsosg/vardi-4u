@@ -3,6 +3,7 @@ import OmgCarousel from "../OmgCarousel"
 import slide1 from "../../images/carousel/bunner.jpg"
 import slide2 from "../../images/carousel/d.jpg"
 import slide3 from "../../images/carousel/outside.jpg"
+import slide4 from "../../images/carousel/c.jpg"
 
 import "./style.css"
 const settings = {
@@ -45,6 +46,20 @@ const slides = [
   },
   {
     img: slide3,
+    alt: "",
+    head: "",
+    parag: "",
+    class: {
+      item: "",
+      img: "d-inline-block w-100",
+      img2: "",
+      caption: "",
+      head: "",
+      parag: "",
+    },
+  },
+  {
+    img: slide4,
     alt: "",
     head: "",
     parag: "",
@@ -103,12 +118,12 @@ const Carousel = () => {
               ναυτιλίας.
             </p>
             <p className="px-5">
-              Ένα μεγάλο μπράβο για τις ενέργειες τους οι οποιες κρατάνε ψηλά
+              Ένα μεγάλο μπράβο για τις ενεργειες τους οι οποιες κρατάνε ψηλά
               τις εταιριες τους στο παγκόσμιο στερέωμα .
             </p>
           </div>
         </div>
-        <div className="col-md-6 pb-5 pt-5">
+        <div className="col-md-6 flex my-auto">
           <OmgCarousel slides={slides} settings={settings} />
         </div>
       </div>

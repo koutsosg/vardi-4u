@@ -114,7 +114,7 @@ const website = {
       href="tel:+306936997712"
       title="Καλέστε με τώρα"
     >
-      <span className="nameicon ">
+      <span className="nameicon ui px-1">
         <Icon link name="phone square" size="large" />
       </span>
       <span className="name">Φωτεινή Βαρδή</span>
